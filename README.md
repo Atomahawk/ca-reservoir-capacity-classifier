@@ -4,7 +4,7 @@ Python  | Numpy | Pandas | Statsmodels | Sci-Kit Learn
 
 Repo update in progress!  Rough readme lives [here](https://docs.google.com/document/d/1gRqm81WZ4JwHMFXvFq-dKE6lQohWEMX9ViEZSQJeJpY/edit#)
 
-Slides live here [here](https://docs.google.com/presentation/d/1wW8NGE5iaboHKFAvt0Dn0p0YvjA1_s8KumoZka54r3M/edit?usp=sharing)
+Slides live [here](https://docs.google.com/presentation/d/1wW8NGE5iaboHKFAvt0Dn0p0YvjA1_s8KumoZka54r3M/edit?usp=sharing).  **Code coming soon**
 
 # Southern California Reservoir Capacity Classifier
 
