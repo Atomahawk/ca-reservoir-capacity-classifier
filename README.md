@@ -2,9 +2,7 @@ Python  | Numpy | Pandas | Statsmodels | Sci-Kit Learn
 --------|-----|-----|---------|------
 [![PyPI](https://img.shields.io/badge/python-3.5-blue.svg)]() | [![PyPI version](https://badge.fury.io/py/numpy.svg)](https://badge.fury.io/py/numpy) | [![PyPI version](https://badge.fury.io/py/pandas.svg)](https://badge.fury.io/py/pandas) | [![PyPI version](https://badge.fury.io/py/statsmodels.svg)](https://badge.fury.io/py/statsmodels) |  [![PyPI version](https://badge.fury.io/py/scikit-learn.svg)](https://badge.fury.io/py/scikit-learn)
 
-Repo update in progress!  Rough readme lives [here](https://docs.google.com/document/d/1gRqm81WZ4JwHMFXvFq-dKE6lQohWEMX9ViEZSQJeJpY/edit#)
-
-Slides live [here](https://docs.google.com/presentation/d/1wW8NGE5iaboHKFAvt0Dn0p0YvjA1_s8KumoZka54r3M/edit?usp=sharing).  **Code coming soon**
+Slides live [here](https://docs.google.com/presentation/d/1wW8NGE5iaboHKFAvt0Dn0p0YvjA1_s8KumoZka54r3M/edit?usp=sharing).  **Clean notebooks coming soon**
 
 # Southern California Reservoir Capacity Classifier
 
