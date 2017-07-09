@@ -18,6 +18,10 @@ Reservoir improvements would need to consider the frequency and the extent to wh
 
 My analysis looked at time series reservoir storage data around LA county to classify storage levels at summer’s end (Sept 1), given data about the rest of the year.
 
+**Guiding Questions**
+- Does climate serve as a valid predictor in classifying water availability?
+- Can water availability be predicted using earlier monthly storage measurements?
+
 ## Data
 - Data sourced from the Department of Water Resources  [California Data Exchange Center (CDEC)](http://cdec.water.ca.gov/cdecstation2/)
 - Climate Data sourced from [Berkeley Earth](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data)
@@ -27,7 +31,31 @@ My analysis looked at time series reservoir storage data around LA county to cla
 
 ## Analytical Approach
 
-Will better explain the questions guiding analyses and a summary of the methods involved
+**Project Notes:**
+- Adjusted storage measurements as proportions of the reservoir's capacity
+- Make predictor features out of the storage af dataframe (1/1 - 6/1)
+- Included climate data
+  - Created dummy variables
+    - Missing values (monthly storage measurements) were the means of the adjacent neighbors
+- Make classes out of the storage af dataframe (9/1)
+- Multiclass variables for four different reservoir conditions
+- Train/Test Splits (climate data only goes to 2013…)
+- Train set (2000 - 2010)
+  - Test set (2011-2012)
+  - Holdout set (2013)
+- Classification model
+- Feature engineering
+  - Parameter optimization
+  - Future work:
+- Do I download more historical data (pre-2000?)
+- Do I incorporate population data?
+Visualization
+- Flask & D3.js
+  - https://www.dashingd3js.com/table-of-contents
+  - The source: https://github.com/uwdata
+  - What I really wanted:
+	- http://bl.ocks.org/lokesh005/7640d9b562bf59b561d6
+	- https://www.ucas.com/corporate/data-and-analysis/ucas-undergraduate-releases/equality-he-reports
 
 ## Tool Stack
 
@@ -52,10 +80,20 @@ Best Performer: Random Forest Classifier
 - Max Depth: 3
 - Number of estimators = 3
 
+```
+More to come
+```
 
-```
-Give an example
-```
+## Limitations
+- assumes business as usual water demand
+- No natural disasters (wildfires and earthquakes)
+- A static population size
+- Unchanging urban, ag, and environmental uses
+- Limited to reservoirs that had data available on CDEC
+- Storage is the most complete predictor variable, with most reservoirs containing public data on storage
+- Reservoirs that had recent data (2000-2017) were used in this analysis (as recent years give context to contemporary population size, consumption, water demand, etc).
+- Some reservoirs had storage data dating back from the 80s to 2001
+- Why CDEC stopped recording monthly storage data for some reservoirs, idk
 
 ## Future Work
 
